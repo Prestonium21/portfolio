@@ -3,31 +3,48 @@
   padding: 0;
   box-sizing: border-box;
 }
-.menu-container {
-  background-color: lavender;
-  display: flex;
-  justify-content: center;    /* Add this */
+body {
+	background-color: lavender;
 }
-.menu {
-  border: 1px solid #fff;
-  width: 900px;
-  display: flex;
-  justify-content: space-between;
+h1,h2,h3 {
+	font-family: "Helvetica", "Arial", sans-serif;
+	color: darkgreen
+}
+p,.body {
+	font-family: "Consolas", "Courier", serif;
+}
+.top {
+}
+.body {
+	border: 3px solid navy;
+	padding: 20px;
+	margin: 20px auto;
+	background-color: lightsteelblue;
+}
+.nav,.navl {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: indigo;
 }
 
-.home {
-  display: flex;
-  justify-content: flex-start;
+.navl {
+  float: left;
 }
-.github,.linkedin {
-  display: flex;
-  justify-content: center;
+
+.navl a {
+  display: block;
+  color: lavender;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
-.resplink {
-  margin-left: 20px;
+
+/* Change the link color to #111 (black) on hover */
+.navl a:hover {
+  background-color: #111;
 }
-.content {
-  display: flex;
-  justify-content: center;
-  background-color: skyblue;
+.active {
+  background-color: darkgreen;
 }
